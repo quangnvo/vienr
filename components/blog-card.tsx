@@ -1,6 +1,5 @@
 'use client'
 
-import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
 import moment from 'moment';
@@ -15,7 +14,7 @@ export default function BlogCard(blog: any) {
 
     return (
         <div
-            className="w-full px-6 py-8 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:scale-105 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white"
+            className="w-full p-6 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:scale-105 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white"
             onClick={() => { router.push(blog.slug) }}
         >
             <div className="grid grid-cols-1 md:grid-cols-12 ">
