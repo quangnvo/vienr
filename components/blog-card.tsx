@@ -1,12 +1,11 @@
 'use client'
 
-import { Badge } from "./ui/badge";
-import Link from "next/link";
-import moment from 'moment';
-import { CalendarDays } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useRouter } from 'next/navigation';
-
+import { blogAvatar } from "./blog/blog-avatar";
+import { blogTag } from "./blog/blog-tag";
+import { blogDate } from "./blog/blog-date";
+import { blogTitle } from "./blog/blog-title";
+import { blogFeatureImage } from './blog/blog-featureImge';
 
 export default function BlogCard(blog: any) {
 
@@ -14,53 +13,25 @@ export default function BlogCard(blog: any) {
 
     return (
         <div
-            className="w-full p-6 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:scale-105 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white"
+            className="w-full p-6 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:-translate-y-2 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white"
             onClick={() => { router.push(blog.slug) }}
         >
             <div className="grid grid-cols-1 md:grid-cols-12 ">
 
-                {/* Thông tin bài viết */}
+                {/* Post Information */}
                 <div className="col-span-7 flex justify-center items-center ">
                     <div className="w-11/12">
-
-                        {/* Date */}
-                        <div className="my-4 flex gap-2">
-                            <CalendarDays />
-                            {moment(blog.date).format("DD-MM-YYYY")}
-                        </div>
-
-                        {/* Blog title */}
-                        <h2 className="text-2xl font-semibold">
-                            <Link href={blog.slug}>
-                                {blog.title}
-                            </Link>
-                        </h2>
-
-                        {/* Avatar */}
-                        <div className='flex gap-3 items-center my-4 font-semibold'>
-                            <Avatar>
-                                <AvatarImage src={blog.avatarAuthor} alt={blog.author} />
-                                <AvatarFallback className='font-semibold'>
-                                    VN
-                                </AvatarFallback>
-                            </Avatar>
-                            {blog.author}
-                        </div>
-
-                        {/* Tags */}
-                        <div className="mt-7 flex gap-2 flex-wrap">
-                            {blog.tags
-                                ? blog.tags.map((tag: string, index: number) => {
-                                    return <Badge variant="default" key={index}>{tag}</Badge>
-                                })
-                                : ""
-                            }
-                        </div>
+                        {blogDate(blog)}
+                        {blogTitle(blog)}
+                        {blogAvatar(blog)}
+                        {blogTag(blog)}
                     </div>
                 </div>
 
-                {/* Hình đại diện của bài viết */}
-                <div className="mt-10 md:mt-0 col-span-5 px-4 py-5 rounded-xl min-h-[20rem] bg-slate-800"></div>
+                {/* Post Feature Image */}
+                <div className="mt-10 md:mt-0 col-span-5">
+                    {blogFeatureImage(blog)}
+                </div>
             </div>
         </div>
     )

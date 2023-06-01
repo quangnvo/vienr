@@ -1,3 +1,10 @@
+import { metadataGenerator } from "@/lib/metadata-generator"
+
+export const metadata = metadataGenerator({
+    title: "TACCP",
+    description: "TACCP Vienr Food"
+  })
+
 export default function Taccp() {
     return (
         <section id="taccp">

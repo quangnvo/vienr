@@ -1,6 +1,12 @@
 import { compareDesc } from 'date-fns'
 import { allBlogs } from 'contentlayer/generated'
 import BlogCard from '@/components/blog-card'
+import { metadataGenerator } from '@/lib/metadata-generator'
+
+export const metadata = metadataGenerator({
+    title: "Blogs",
+    description: "Blogs Vienr Food"
+})
 
 export default function Blogs() {
 

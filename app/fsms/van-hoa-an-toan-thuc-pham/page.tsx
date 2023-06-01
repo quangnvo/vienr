@@ -1,3 +1,10 @@
+import { metadataGenerator } from "@/lib/metadata-generator"
+
+export const metadata = metadataGenerator({
+    title: "Văn hóa an toàn thực phẩm",
+    description: "Văn hóa an toàn thực phẩm Vienr Food"
+})
+
 export default function Vhattp() {
     return (
         <section id="vhattp">

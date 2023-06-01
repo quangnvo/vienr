@@ -9,7 +9,10 @@ import { Providers } from '@/redux/provider';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'Vienr Food | Food Safety Management',
+	title: {
+		default: 'Vienr Food | Food Safety Management',
+		template: "%s | Vienr Food"
+	},
 	description: 'Food Safety Management Blog, writing about FSMS, focusing on HACCP',
 }
 

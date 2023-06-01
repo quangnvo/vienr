@@ -34,6 +34,7 @@ const defineDocumentTypeCreator = ({ name, filePathPattern }: DocumentTypeProps)
             author: { type: "string", required: true },
             authorFallBack: { type: "string" },
             avatarAuthor: { type: "string", required: true },
+            featureImage: { type: "string", required: true },
             tags: {
                 type: 'list',
                 of: { type: 'string' },

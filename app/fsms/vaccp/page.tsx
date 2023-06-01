@@ -1,3 +1,10 @@
+import { metadataGenerator } from "@/lib/metadata-generator"
+
+export const metadata = metadataGenerator({
+    title: "VACCP",
+    description: "VACCP Vienr Food"
+})
+
 export default function Vaccp() {
     return (
         <section id="vaccp">

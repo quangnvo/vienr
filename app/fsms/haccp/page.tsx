@@ -1,3 +1,10 @@
+import { metadataGenerator } from "@/lib/metadata-generator"
+
+export const metadata = metadataGenerator({
+  title: "HACCP",
+  description: "HACCP Vienr Food"
+})
+
 export default function Haccp() {
   return (
     <section id="haccp">

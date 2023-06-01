@@ -20,7 +20,7 @@ const blockInBreadcrums = (block: Block) => {
             <ChevronRight className="dark:text-gray-400" />
             <Link
                 href={block.hrefName}
-                className="ml-1 text-md font-medium text-gray-700 hover:font-bold md:ml-2 dark:text-gray-300 dark:hover:text-white">
+                className="ml-1 text-md font-medium text-gray-700 hover:font-bold dark:text-gray-300 dark:hover:text-white">
                 {block.blockName}
             </Link>
         </div>
@@ -36,7 +36,7 @@ export const breadcrums = ({ block1, block2, block3, block4, block5 }: BreadCrum
                 <li className="">
                     <Link
                         href="/"
-                        className="text-md font-medium text-gray-700 hover:font-bold md:ml-2 dark:text-gray-300 dark:hover:text-white">
+                        className="text-md font-medium text-gray-700 hover:font-bold dark:text-gray-300 dark:hover:text-white">
                         Trang chủ
                     </Link>
                 </li>
