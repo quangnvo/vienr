@@ -15,7 +15,7 @@ export default function Prps() {
 
     const prpCard = ({ cardName, hrefName, content }: PrpCard) => {
         return <div
-            className='py-8 px-6 border-2 border-slate-200 flex justify-center rounded-lg shadow-sm transition ease-in-out delay-150 duration-150 hover:cursor-pointer hover:scale-105 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white'
+            className='py-8 px-6 border-2 border-slate-200 flex justify-center rounded-lg shadow-sm transition ease-in-out delay-150 duration-150 hover:cursor-pointer hover:-translate-y-2 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white'
             onClick={() => router.push(hrefName)}
         >
             <div>
