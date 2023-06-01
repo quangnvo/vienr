@@ -1,13 +1,7 @@
 'use client'
 
 import { breadcrums } from '@/components/breadcrums'
-import { metadataGenerator } from '@/lib/metadata-generator';
 import { useRouter } from 'next/navigation';
-
-export const metadata = metadataGenerator({
-    title: "PRPs - Chương trình tiên quyết",
-    description: "PRPs - Chương trình tiên quyết Vienr Food"
-  })
 
 export default function Prps() {
 
