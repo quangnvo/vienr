@@ -45,7 +45,7 @@ export default function Fsms() {
                 <CardBody className="p-5 dark:bg-slate-800">
 
                     {/* Card name */}
-                    <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight transition-colors">
+                    <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight dark:text-slate-50">
                         {cardName}
                     </h3>
 
