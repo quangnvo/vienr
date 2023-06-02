@@ -64,7 +64,7 @@ export default function NavBar() {
     return (
         <>
             <nav className="sticky inset-0 z-10 h-max rounded-none max-w-full shadow-md bg-opacity-80 backdrop-saturate-200 backdrop-blur-2xl bg-white border border-white/80 dark:bg-gray-900 dark:border-none">
-                <div className="container py-5 flex items-center justify-between">
+                <div className="container py-3 flex items-center justify-between">
                     {/* Left side */}
                     {/* Logo */}
                     {isDark
@@ -73,7 +73,8 @@ export default function NavBar() {
                                 src={logoVienrDarkMode}
                                 alt="Logo VienrFood"
                                 priority
-                                width={100}
+                                width={90}
+                                height={50}
                             />
                         </Link>
                         : <Link href="/">
@@ -81,7 +82,8 @@ export default function NavBar() {
                                 src={logoVienrLightMode}
                                 alt="Logo VienrFood"
                                 priority
-                                width={100}
+                                width={90}
+                                height={50}
                             />
                         </Link>
                     }

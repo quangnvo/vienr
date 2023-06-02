@@ -23,14 +23,14 @@ export default function Home() {
 	const renderOrganizationCard = ({ src, alt, width, height }: OrganizationCardProps) => {
 		return <div
 			className='col-span-4 bg-white flex justify-center items-center px-6 rounded-lg border-2 border-slate-200 shadow-sm'
-			style={{ height: "210px" }}
+			style={{ height: "190px" }}
 		>
 			<Image
 				src={src}
 				alt={alt}
 				width={width}
 				height={height}
-				// className='grayscale'
+			// className='grayscale'
 			/>
 		</div>
 	}
@@ -46,12 +46,12 @@ export default function Home() {
 						<div className="w-full text-center xl:text-left">
 
 							{/* Title */}
-							<h1 className="scroll-m-20 text-5xl font-bold tracking-tight md:text-7xl dark:text-gray-50 animate__animated animate__fadeInLeft">
+							<h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl dark:text-gray-50 animate__animated animate__fadeInLeft">
 								Vienr Food
 							</h1>
 
 							{/* Text */}
-							<div className="text-lg md:text-xl mt-5 animate__animated animate__fadeInLeft xl:w-11/12" style={{ lineHeight: '35px' }}>
+							<div className="text-base md:text-xl mt-5 animate__animated animate__fadeInLeft md:w-11/12" style={{ lineHeight: '35px' }}>
 								<p className='my-4'>
 									Chào mừng các bạn đến với website <b>vienrfood.com</b>!
 								</p>
@@ -100,7 +100,7 @@ export default function Home() {
 				{/* Section Organizations */}
 				<section id="organizations" className='my-32'>
 
-					<h2 className="scroll-m-20 pb-7 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-center lg:text-left">
+					<h2 className="scroll-m-20 pb-7 text-2xl md:text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-center lg:text-left">
 						Chúng tôi luôn cập nhật tiêu chuẩn toàn cầu về an toàn thực phẩm
 					</h2>
 

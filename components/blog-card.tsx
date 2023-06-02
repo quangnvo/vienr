@@ -29,7 +29,7 @@ export default function BlogCard(blog: any) {
                 </div>
 
                 {/* Post Feature Image */}
-                <div className="mt-10 md:mt-0 col-span-5">
+                <div className="mt-4 md:mt-0 col-span-5">
                     {blogFeatureImage(blog)}
                 </div>
             </div>

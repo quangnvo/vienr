@@ -36,8 +36,8 @@ export default function Footer() {
 											src={logoVienrDarkMode}
 											alt="Logo VienrFood"
 											priority
-											width={100}
-											height={200}
+											width={90}
+											height={50}
 										/>
 									</Link>
 									: <Link href="/">
@@ -45,8 +45,8 @@ export default function Footer() {
 											src={logoVienrLightMode}
 											alt="Logo VienrFood"
 											priority
-											width={100}
-											height={200}
+											width={90}
+											height={50}
 										/>
 									</Link>
 								}
