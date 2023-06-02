@@ -127,7 +127,7 @@ export default function Fsms() {
                             <div className="md:pl-14">
 
                                 {/* Title */}
-                                <h1 className="scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
+                                <h1 className="text-center md:text-left scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
                                     Đôi dòng về FSMS
                                 </h1>
 

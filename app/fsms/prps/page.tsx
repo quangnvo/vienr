@@ -19,9 +19,9 @@ export default function Prps() {
             onClick={() => router.push(hrefName)}
         >
             <div>
-                <h2 className='scroll-m-20 pb-2 text-2xl font-semibold tracking-tight first:mt-0'>
+                <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight transition-colors mb-3">
                     {cardName}
-                </h2>
+                </h3>
                 <p className="leading-7 text-justify">
                     {content}
                 </p>
@@ -30,7 +30,7 @@ export default function Prps() {
     }
 
     return (
-        <section id="prps" className="py-20">
+        <section id="prps" className="py-12">
             <div className="container">
                 <div>
 
@@ -47,7 +47,7 @@ export default function Prps() {
                     })}
 
                     {/* Title */}
-                    <h1 className="scroll-m-20 text-4xl text-center md:text-left font-bold tracking-tight lg:text-5xl my-7">
+                    <h1 className="text-center md:text-left scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight my-5">
                         PRPs - Các chương trình tiên quyết
                     </h1>
 
