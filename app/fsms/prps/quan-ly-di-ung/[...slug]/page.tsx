@@ -68,7 +68,10 @@ export default async function BlogPage({ params }: BlogProps) {
             {blogDate(blog)}
             {blogTitle(blog)}
             {blogAvatar(blog)}
-            {blogTag(blog)}
+            {blogTag({
+                blog: blog,
+                isAppearedOnMobile: true
+            })}
 
             <hr className="my-4" />
 

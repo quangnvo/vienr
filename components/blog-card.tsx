@@ -24,7 +24,10 @@ export default function BlogCard(blog: any) {
                         {blogDate(blog)}
                         {blogTitle(blog)}
                         {blogAvatar(blog)}
-                        {blogTag(blog)}
+                        {blogTag({
+                            blog: blog,
+                            isAppearedOnMobile: false
+                        })}
                     </div>
                 </div>
 
