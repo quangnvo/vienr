@@ -43,10 +43,14 @@ export default function Fsms() {
                 </CardHeader>
 
                 <CardBody className="p-5 dark:bg-slate-800">
-                    <p className="text-2xl font-semibold mt-2 text-primary">
+
+                    {/* Card name */}
+                    <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight transition-colors">
                         {cardName}
-                    </p>
-                    <div className="mt-5">
+                    </h3>
+
+                    {/* Button Tìm hiểu thêm */}
+                    <div className="mt-4 text-center md:text-justify">
                         <Link href={cardHref}>
                             <Button variant="vienr" className="shadow-md font-semibold">
                                 Tìm hiểu thêm
@@ -70,11 +74,11 @@ export default function Fsms() {
                 <div className="col-span-8 flex justify-center items-center px-0 md:pr-12 order-1 md:order-2">
                     <div className="px-3 md:px-0">
 
-                        <h2 className="text-3xl font-semibold text-center md:text-left md:mt-0 mt-10 tracking-wide">
+                        <h2 className="text-center md:text-left scroll-m-20 text-2xl md:text-3xl font-semibold tracking-tight transition-colors">
                             {title}
                         </h2>
 
-                        <p className="my-5 leading-relaxed text-lg md:text-xl text-justify" style={{ lineHeight: '35px' }}>
+                        <p className="my-5 text-base md:text-lg text-justify" style={{ lineHeight: '35px' }}>
                             {context}
                         </p>
 
@@ -123,23 +127,25 @@ export default function Fsms() {
                             <div className="md:pl-14">
 
                                 {/* Title */}
-                                <h1 className="text-3xl md:pt-0 md:text-4xl font-semibold md:text-left text-center">
+                                <h1 className="scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
                                     Đôi dòng về FSMS
                                 </h1>
 
-                                <p className="mt-6 text-lg md:text-xl text-justify" style={{ lineHeight: '35px' }}>
-                                    Hệ thống quản lý an toàn thực phẩm (<b>Food safety management system</b> - <b>FSMS</b>) bao gồm các quy trình, chương trình được yêu cầu thực hiện để tạo ra sản phẩm thực phẩm an toàn, hướng tới mục đích đảm bảo rằng thực phẩm không là nguy cơ gây ngộ độc và không dẫn đến bùng phát bệnh đối với người tiêu dùng. Điều này bao gồm quản lý sự cố và nguy cơ tiềm ẩn từ quá trình thu mua nguyên liệu thô cho đến khi phân phối sản phẩm.
-                                </p>
-                                <p className="mt-6 text-lg md:text-xl" style={{ lineHeight: '35px' }}>
-                                    Các yếu tố chính của hệ thống quản lý an toàn thực phẩm bao gồm:
-                                </p>
-                                <ul className="my-6 ml-6 list-disc [&>li]:mt-2 text-base md:text-lg">
-                                    <li>HACCP - An toàn thực phẩm</li>
-                                    <li>PRPs - Các chương trình tiên quyết </li>
-                                    <li>TACCP - Phòng vệ thực phẩm </li>
-                                    <li>VACCP - Giảm thiểu gian lận</li>
-                                    <li>Điều kiện cơ sở và thiết bị phù hợp</li>
-                                </ul>
+                                <div className=" text-base md:text-xl text-justify mt-6">
+                                    <p style={{ lineHeight: '35px' }}>
+                                        Hệ thống quản lý an toàn thực phẩm (<b>Food safety management system</b> - <b>FSMS</b>) bao gồm các quy trình, chương trình được yêu cầu thực hiện để tạo ra sản phẩm thực phẩm an toàn, hướng tới mục đích đảm bảo rằng thực phẩm không là nguy cơ gây ngộ độc và không dẫn đến bùng phát bệnh đối với người tiêu dùng. Điều này bao gồm quản lý sự cố và nguy cơ tiềm ẩn từ quá trình thu mua nguyên liệu thô cho đến khi phân phối sản phẩm.
+                                    </p>
+                                    <p className="my-6" style={{ lineHeight: '35px' }}>
+                                        Các yếu tố chính của hệ thống quản lý an toàn thực phẩm bao gồm:
+                                    </p>
+                                    <ul className="my-6 ml-6 list-disc [&>li]:mt-2 text-base md:text-lg">
+                                        <li>HACCP - An toàn thực phẩm</li>
+                                        <li>PRPs - Các chương trình tiên quyết </li>
+                                        <li>TACCP - Phòng vệ thực phẩm </li>
+                                        <li>VACCP - Giảm thiểu gian lận</li>
+                                        <li>Điều kiện cơ sở và thiết bị phù hợp</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
