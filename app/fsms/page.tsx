@@ -15,9 +15,11 @@ import fsmsDarkMode from "../../public/images/fsms/fsms-dark-mode.svg"
 export default function Fsms() {
 
     interface SmallCardPropsType {
-        badgeName: string,
+        badgeName?: string,
         cardName: string,
-        cardHref: string
+        cardHref: string,
+        imgSrc?: string
+        imgAlt?: string
     }
 
     interface BigCardPropsType {
@@ -26,20 +28,29 @@ export default function Fsms() {
         contextAdditional?: string[],
         badgeName: string,
         cardName: string,
-        cardHref: string
+        cardHref: string,
+        imgSrc?: string
+        imgAlt?: string
     }
 
     // ---------- Render Small Card ----------
-    const renderSmallCard = ({ badgeName, cardName, cardHref }: SmallCardPropsType) => {
+    const renderSmallCard = ({ cardName, cardHref, imgSrc, imgAlt }: SmallCardPropsType) => {
         return <div className="col-span-4 flex justify-center items-center order-2 md:order-1">
             <Card className="w-80 overflow-hidden shadow-md border border-black dark:border-slate-400">
                 <CardHeader
                     floated={false}
                     shadow={false}
                     color="transparent"
-                    className="m-0 rounded-none bg-slate-900 dark:bg-slate-400"
+                    className="m-0 rounded-none"
                 >
-                    <div className="h-64"></div>
+                    <div className="h-72 flex justify-center items-center pt-5 pb-2 px-3 bg-white dark:bg-slate-50">
+                        <Image
+                            src={`/images/fsms/${imgSrc}`}
+                            alt={`${imgAlt}`}
+                            width={250}
+                            height={100}
+                        />
+                    </div>
                 </CardHeader>
 
                 <CardBody className="p-5 dark:bg-slate-800">
@@ -50,7 +61,7 @@ export default function Fsms() {
                     </h3>
 
                     {/* Button Tìm hiểu thêm */}
-                    <div className="mt-4 text-center md:text-justify">
+                    <div className="mt-4 text-center md:text-left">
                         <Link href={cardHref}>
                             <Button variant="vienr" className="shadow-md font-semibold">
                                 Tìm hiểu thêm
@@ -63,12 +74,18 @@ export default function Fsms() {
     }
 
     // ---------- Render Big Card ----------
-    const renderBigCard = ({ title, context, badgeName, cardName, cardHref, contextAdditional }: BigCardPropsType) => {
+    const renderBigCard = ({ title, context, badgeName, cardName, cardHref, contextAdditional, imgAlt, imgSrc }: BigCardPropsType) => {
         return <div className="w-full py-8 rounded-xl mt-10 px-5 md:px-0 bg-slate-100 dark:bg-gray-900">
             <div className="grid grid-cols-1 md:grid-cols-12">
 
                 {/* Card */}
-                {renderSmallCard({ badgeName: badgeName, cardName: cardName, cardHref: cardHref })}
+                {renderSmallCard({
+                    badgeName,
+                    cardName,
+                    cardHref,
+                    imgSrc,
+                    imgAlt
+                })}
 
                 {/* Nội dung bài */}
                 <div className="col-span-8 flex justify-center items-center px-0 md:pr-12 order-1 md:order-2">
@@ -157,7 +174,9 @@ export default function Fsms() {
                     context: "HACCP là viết tắt của Hazard Analysis Critical Control Point, nghĩa là phân tích mối nguy và điểm kiểm soát giới hạn. HACCP là tập hợp những nguyên tắc được thiết kế để ngăn ngừa rủi ro về an toàn thực phẩm trong quá trình chế biến sản phẩm thực phẩm.",
                     badgeName: "HACCP",
                     cardName: "HACCP",
-                    cardHref: "/fsms/haccp"
+                    cardHref: "/fsms/haccp",
+                    imgSrc: "hinh-haccp.svg",
+                    imgAlt: "HACCP"
                 })}
 
 
@@ -168,7 +187,9 @@ export default function Fsms() {
                     badgeName: "PRPs",
                     cardName: "Chương trình tiên quyết",
                     cardHref: "/fsms/prps",
-                    contextAdditional: ["Thực hành sản xuất tốt (GMP)", "Thực hành nông nghiệp tốt (GAP)", "Thực hành vệ sinh tốt (GHP)"]
+                    contextAdditional: ["Thực hành sản xuất tốt (GMP)", "Thực hành nông nghiệp tốt (GAP)", "Thực hành vệ sinh tốt (GHP)"],
+                    imgSrc: "hinh-prp.svg",
+                    imgAlt: "PRPs"
                 })}
 
                 {/* VACCP */}
@@ -177,7 +198,9 @@ export default function Fsms() {
                     context: "VACCP là viết tắt của cụm từ Vulnerability Assessment and Critical Control Points, nghĩa là Đánh giá lỗ hổng và các điểm kiểm soát tới hạn. Các từ viết tắt VACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Tuy nhiên điểm kiểm soát tới hạn trong VACCP là các sự cố an toàn của cơ sở và nên hiểu là “các mối đe dọa giả mạo có ác ý (phòng vệ thực phẩm)”.",
                     badgeName: "VACCP",
                     cardName: "VACCP",
-                    cardHref: "/fsms/vaccp"
+                    cardHref: "/fsms/vaccp",
+                    imgSrc: "hinh-vaccp.svg",
+                    imgAlt: "VACCP"
                 })}
 
                 {/* TACCP */}
@@ -186,7 +209,9 @@ export default function Fsms() {
                     context: "TACCP là viết tắt của cụm từ Threat Assessment and Critical Control Points, nghĩa là Đánh giá mối đe dọa và các điểm kiểm soát tới hạn. Cũng như VACCP, cụm từ viết tắt TACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Trong TACCP, các điểm kiểm soát tập trung vào sự cố an toàn chuỗi cung ứng và cơ sở. Và tốt hơn, nên hiểu các điểm kiểm soát trong TACCP là “Các lỗ hổng dễ bị gian lận thực phẩm” do mục đích kinh tế.",
                     badgeName: "TACCP",
                     cardName: "TACCP",
-                    cardHref: "/fsms/taccp"
+                    cardHref: "/fsms/taccp",
+                    imgSrc: "hinh-taccp.svg",
+                    imgAlt: "TACCP"
                 })}
 
                 {/* VHATTP */}
@@ -195,7 +220,9 @@ export default function Fsms() {
                     context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                     badgeName: "VHATTP",
                     cardName: "Văn hóa ATTP",
-                    cardHref: "/fsms/van-hoa-an-toan-thuc-pham"
+                    cardHref: "/fsms/van-hoa-an-toan-thuc-pham",
+                    imgSrc: "hinh-vhattp.svg",
+                    imgAlt: "Văn hóa an toàn thực phẩm"
                 })}
             </div>
         </section>
