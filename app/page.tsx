@@ -58,7 +58,7 @@ export default function Home() {
 					<div className="relative z-10 -mt-28 flex flex-col items-center justify-between gap-5">
 						<div className="flex flex-col items-center gap-2 text-center">
 
-							<h1 className="scroll-m-20 text-5xl md:text-7xl font-bold tracking-tight animate__animated animate__fadeInLeft">
+							<h1 className="scroll-m-20 text-4xl md:text-7xl font-bold tracking-tight animate__animated animate__fadeInLeft">
 								Vienr Food
 							</h1>
 
