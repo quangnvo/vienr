@@ -35,7 +35,7 @@ export default function Home() {
 
 	return (
 		<main>
-			<div className='container py-5 duration-500'>
+			<div className='container py-5 duration-500 overflow-hidden'>
 
 				{/* Section Intro 1 */}
 				<section className="relative flex h-[calc(100vh-72px)] items-center justify-center">
@@ -44,18 +44,18 @@ export default function Home() {
 					<div className="absolute inset-0 z-0">
 
 						{/* 1st neon */}
-						<div className="absolute left-1/4 overflow-visible md:block hidden">
-							<div className="animate-pulse-slower absolute h-[460px] w-[460px] -translate-x-1/4 rounded-full mix-blend-multiply blur-3xl filter bg-teal-100/50 dark:bg-teal-800/20" />
+						<div className="absolute left-1/4 overflow-visible">
+							<div className="animate-pulse-slower absolute h-[460px] w-[460px] -translate-x-1/4 rounded-full bg-teal-100/50 mix-blend-multiply blur-3xl filter dark:bg-teal-800/20" />
 						</div>
 
 						{/* 2nd neon */}
 						<div className="absolute left-3/4 overflow-visible">
-							<div className="animate-pulse-slower absolute top-20 left-3/4 h-[612px] w-[612px] -translate-x-2/3 rounded-full mix-blend-multiply blur-3xl filter bg-indigo-200/40 dark:bg-indigo-900/20" />
+							<div className="animate-pulse-slower absolute top-20 left-3/4 h-[612px] w-[612px] -translate-x-2/3 rounded-full bg-indigo-200/40 mix-blend-multiply blur-3xl filter dark:bg-indigo-900/20" />
 						</div>
 					</div>
 
 					{/* Title and intro */}
-					<div className="relative z-10 flex flex-col items-center justify-between gap-8">
+					<div className="relative z-10 -mt-28 flex flex-col items-center justify-between gap-5">
 						<div className="flex flex-col items-center gap-2 text-center">
 
 							<h1 className="scroll-m-20 text-5xl md:text-7xl font-bold tracking-tight animate__animated animate__fadeInLeft">
@@ -90,9 +90,9 @@ export default function Home() {
 									<li className='ml-0 xl:ml-7'>Tổ chức sáng kiến an toàn thực phẩm toàn cầu (<b>GFSI</b>)</li>
 									<li className='ml-0 xl:ml-7'>Hiệp hội bán lẻ toàn cầu Anh Quốc (<b>BRC</b>)</li>
 								</ul>
-								<p className='my-4 text-justify'>
+								{/* <p className='my-4 text-justify'>
 									Bất kể bạn là một chủ nhà hàng thực phẩm, nhà sản xuất, nhân viên quản lý hay chỉ đơn giản là người quan tâm đến an toàn thực phẩm, chúng tôi hy vọng rằng website của chúng tôi sẽ trở thành nguồn tài nguyên hữu ích và đáng tin cậy cho bạn. Cảm ơn bạn đã ghé thăm!
-								</p>
+								</p> */}
 							</div>
 
 							{/* Button Blog */}
