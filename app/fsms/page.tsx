@@ -36,15 +36,15 @@ export default function Fsms() {
     // ---------- Render Small Card ----------
     const renderSmallCard = ({ cardName, cardHref, imgSrc, imgAlt }: SmallCardPropsType) => {
         return <div className="col-span-4 flex justify-center items-center order-2 md:order-1">
-            <Card className="w-80 overflow-hidden shadow-md border border-black dark:border-slate-400">
+            <Card className="w-80 overflow-hidden shadow-md border border-black dark:border-white">
                 <CardHeader
                     floated={false}
                     shadow={false}
                     color="transparent"
                     className="m-0 rounded-none"
                 >
-                    {imgSrc == "hinh-vhattp.svg"
-                        ? <div className="flex justify-center items-center py-20 px-3 bg-white dark:bg-slate-50">
+                    {cardName == "Văn hóa ATTP"
+                        ? <div className="flex justify-center items-center py-20 px-3 bg-white dark:bg-slate-100">
                             <Image
                                 src={`/images/fsms/${imgSrc}`}
                                 alt={`${imgAlt}`}
@@ -52,7 +52,7 @@ export default function Fsms() {
                                 height={100}
                             />
                         </div>
-                        : <div className="flex justify-center items-center py-7 px-3 bg-white dark:bg-slate-50">
+                        : <div className="flex justify-center items-center py-7 px-3 bg-white dark:bg-slate-100">
                             <Image
                                 src={`/images/fsms/${imgSrc}`}
                                 alt={`${imgAlt}`}
@@ -64,10 +64,10 @@ export default function Fsms() {
 
                 </CardHeader>
 
-                <CardBody className="p-5 dark:bg-slate-800">
+                <CardBody className="p-5 dark:bg-slate-100">
 
                     {/* Card name */}
-                    <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight dark:text-slate-50">
+                    <h3 className="text-center md:text-left scroll-m-20 text-xl md:text-2xl font-semibold tracking-tight">
                         {cardName}
                     </h3>
 

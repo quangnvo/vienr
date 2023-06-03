@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { useAppSelector } from "@/redux/hooks";
 import trangChuVienrDarkMode from "@/public/images/home/trang-chu-dark-mode.svg"
@@ -12,7 +11,6 @@ import trangChuVienrLightMode from "@/public/images/home/trang-chu-light-mode.sv
 export default function Home() {
 
 	const isDark = useAppSelector(state => state.darkModeReducer.isDark)
-	const router = useRouter()
 	interface OrganizationCardProps {
 		src: string,
 		alt: string,
@@ -37,8 +35,7 @@ export default function Home() {
 
 	return (
 		<main>
-			<div className='container py-20'>
-
+			<div className='container py-20 duration-500'>
 				{/* Section intro */}
 				<section id='intro' className="grid grid-cols-1 xl:grid-cols-12">
 
@@ -51,7 +48,7 @@ export default function Home() {
 							</h1>
 
 							{/* Text */}
-							<div className="text-base md:text-xl mt-5 animate__animated animate__fadeInLeft md:w-11/12" style={{ lineHeight: '35px' }}>
+							<div className="text-base md:text-xl mt-5 animate__animated animate__fadeInLeft lg:w-11/12" style={{ lineHeight: '35px' }}>
 								<p className='my-4'>
 									Chào mừng các bạn đến với website <b>vienrfood.com</b>!
 								</p>

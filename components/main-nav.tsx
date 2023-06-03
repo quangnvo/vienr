@@ -63,7 +63,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="sticky inset-0 z-10 h-max rounded-none max-w-full shadow-md bg-opacity-80 backdrop-saturate-200 backdrop-blur-2xl bg-white border border-white/80 dark:bg-gray-900 dark:border-none">
+            <nav className="sticky inset-0 z-50 h-max rounded-none max-w-full shadow-md bg-opacity-80 backdrop-saturate-200 backdrop-blur-2xl bg-white border border-white/80 dark:bg-gray-900 dark:border-none">
                 <div className="container py-3 flex items-center justify-between">
                     {/* Left side */}
                     {/* Logo */}
@@ -102,7 +102,7 @@ export default function NavBar() {
                         {/* Icon Hamburger */}
                         <IconButton
                             variant="text"
-                            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden dark:text-white"
+                            className="h-6 w-6 text-inherit lg:hidden dark:text-white"
                             ripple={false}
                             onClick={() => { setIsNavbarMobileOpen(!isNavbarMobileOpen) }}
                         >
