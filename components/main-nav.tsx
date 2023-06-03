@@ -2,10 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useAppSelector } from "@/redux/hooks";
-import {
-    Collapse,
-    IconButton,
-} from "@material-tailwind/react";
+import { Collapse } from "@material-tailwind/react";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -100,10 +97,8 @@ export default function NavBar() {
                         <ModeToggle />
 
                         {/* Icon Hamburger */}
-                        <IconButton
-                            variant="text"
+                        <button
                             className="h-6 w-6 text-inherit lg:hidden dark:text-white"
-                            ripple={false}
                             onClick={() => { setIsNavbarMobileOpen(!isNavbarMobileOpen) }}
                         >
                             {isNavbarMobileOpen ? (
@@ -136,7 +131,7 @@ export default function NavBar() {
                                     />
                                 </svg>
                             )}
-                        </IconButton>
+                        </button>
                     </div>
                 </div>
 
