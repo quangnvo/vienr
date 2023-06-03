@@ -136,6 +136,20 @@ export default function Home() {
 							width: 340,
 							height: 100,
 						})}
+
+						{renderOrganizationCard({
+							src: "/images/home/logo-fsanz.png",
+							alt: 'FSANZ logo',
+							width: 340,
+							height: 100,
+						})}
+
+						{renderOrganizationCard({
+							src: "/images/home/logo-codex.png",
+							alt: 'CODEX logo',
+							width: 340,
+							height: 100,
+						})}
 					</div>
 				</section>
 			</div>

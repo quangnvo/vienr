@@ -179,18 +179,6 @@ export default function Fsms() {
                     </div>
                 </div>
 
-                {/* HACCP */}
-                {renderBigCard({
-                    title: "HACCP",
-                    context: "HACCP là viết tắt của Hazard Analysis Critical Control Point, nghĩa là phân tích mối nguy và điểm kiểm soát giới hạn. HACCP là tập hợp những nguyên tắc được thiết kế để ngăn ngừa rủi ro về an toàn thực phẩm trong quá trình chế biến sản phẩm thực phẩm.",
-                    badgeName: "HACCP",
-                    cardName: "HACCP",
-                    cardHref: "/fsms/haccp",
-                    imgSrc: "hinh-haccp.svg",
-                    imgAlt: "HACCP"
-                })}
-
-
                 {/* PRPs */}
                 {renderBigCard({
                     title: "PRPs - Các chương trình tiên quyết",
@@ -201,6 +189,17 @@ export default function Fsms() {
                     contextAdditional: ["Thực hành sản xuất tốt (GMP)", "Thực hành nông nghiệp tốt (GAP)", "Thực hành vệ sinh tốt (GHP)"],
                     imgSrc: "hinh-prp.svg",
                     imgAlt: "PRPs"
+                })}
+
+                {/* HACCP */}
+                {renderBigCard({
+                    title: "HACCP",
+                    context: "HACCP là viết tắt của Hazard Analysis Critical Control Point, nghĩa là phân tích mối nguy và điểm kiểm soát giới hạn. HACCP là tập hợp những nguyên tắc được thiết kế để ngăn ngừa rủi ro về an toàn thực phẩm trong quá trình chế biến sản phẩm thực phẩm.",
+                    badgeName: "HACCP",
+                    cardName: "HACCP",
+                    cardHref: "/fsms/haccp",
+                    imgSrc: "hinh-haccp.svg",
+                    imgAlt: "HACCP"
                 })}
 
                 {/* VACCP */}
