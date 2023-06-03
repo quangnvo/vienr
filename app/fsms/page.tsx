@@ -111,7 +111,7 @@ export default function Fsms() {
                         </p>
 
                         {contextAdditional
-                            ? <ul className="my-6 ml-6 list-disc [&>li]:mt-2 text-lg">
+                            ? <ul className="my-6 ml-6 list-disc [&>li]:mt-2 text-base md:text-lg">
                                 {contextAdditional.map((item, index) => {
                                     return <li key={index}>{item}</li>
                                 })}
