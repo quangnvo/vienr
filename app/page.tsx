@@ -35,7 +35,7 @@ export default function Home() {
 
 	return (
 		<main>
-			<div className='container py-5 duration-500 overflow-hidden'>
+			<div className='container py-5 overflow-hidden'>
 
 				{/* Section Intro 1 */}
 				<section className="relative flex h-[calc(100vh-72px)] items-center justify-center">
