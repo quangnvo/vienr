@@ -45,12 +45,12 @@ export default function Home() {
 
 						{/* 1st neon */}
 						<div className="absolute left-1/4 overflow-visible">
-							<div className="animate-pulse-slower absolute h-[460px] w-[460px] -translate-x-1/4 rounded-full bg-teal-100/50 mix-blend-multiply blur-3xl filter dark:bg-teal-800/20" />
+							<div className="absolute h-[460px] w-[460px] -translate-x-1/4 rounded-full bg-teal-100/50 mix-blend-multiply blur-3xl filter dark:bg-teal-800/20" />
 						</div>
 
 						{/* 2nd neon */}
 						<div className="absolute left-3/4 overflow-visible">
-							<div className="animate-pulse-slower absolute top-20 left-3/4 h-[612px] w-[612px] -translate-x-2/3 rounded-full bg-indigo-200/40 mix-blend-multiply blur-3xl filter dark:bg-indigo-900/20" />
+							<div className="absolute top-20 left-3/4 h-[612px] w-[612px] -translate-x-2/3 rounded-full bg-indigo-200/40 mix-blend-multiply blur-3xl filter dark:bg-indigo-900/20" />
 						</div>
 					</div>
 
