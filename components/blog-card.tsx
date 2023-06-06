@@ -13,7 +13,7 @@ export default function BlogCard(blog: any) {
 
     return (
         <div
-            className="w-full p-6 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:-translate-y-2 hover:bg-slate-50 hover:border-black dark:hover:bg-black dark:hover:border-white flex justify-center items-center"
+            className="w-full p-6 my-10 rounded-xl border-2 border-slate-200 shadow-sm transition ease-in-out delay-150 duration-200 hover:cursor-pointer hover:-translate-y-2 hover:bg-slate-50 flex justify-center items-center dark:bg-slate-900 dark:border-slate-900 dark:hover:border-slate-200"
             onClick={() => { router.push(blog.slug) }}
         >
             <div className="grid grid-cols-1 md:grid-cols-12 ">
