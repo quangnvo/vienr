@@ -205,7 +205,7 @@ export default function Fsms() {
                 {/* VACCP */}
                 {renderBigCard({
                     title: "VACCP",
-                    context: "VACCP là viết tắt của cụm từ Vulnerability Assessment and Critical Control Points, nghĩa là Đánh giá lỗ hổng và các điểm kiểm soát tới hạn. Các từ viết tắt VACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Tuy nhiên điểm kiểm soát tới hạn trong VACCP là các sự cố an toàn của cơ sở và nên hiểu là “các mối đe dọa giả mạo có ác ý (phòng vệ thực phẩm)”.",
+                    context: "VACCP là viết tắt của cụm từ Vulnerability Assessment and Critical Control Points nghĩa là Đánh giá lỗ hổng và các điểm kiểm soát tới hạn. Các từ viết tắt VACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Trong TACCP các điểm kiểm soát tập trung vào sự cố an toàn chuỗi cung ứng và cơ sở. Và tốt hơn, nên hiểu các điểm kiểm soát trong TACCP là “Các lỗ hổng dễ bị gian lận thực phẩm” do mục đích kinh tế.",
                     badgeName: "VACCP",
                     cardName: "VACCP",
                     cardHref: "/fsms/vaccp",
@@ -216,7 +216,7 @@ export default function Fsms() {
                 {/* TACCP */}
                 {renderBigCard({
                     title: "TACCP",
-                    context: "TACCP là viết tắt của cụm từ Threat Assessment and Critical Control Points, nghĩa là Đánh giá mối đe dọa và các điểm kiểm soát tới hạn. Cũng như VACCP, cụm từ viết tắt TACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Trong TACCP, các điểm kiểm soát tập trung vào sự cố an toàn chuỗi cung ứng và cơ sở. Và tốt hơn, nên hiểu các điểm kiểm soát trong TACCP là “Các lỗ hổng dễ bị gian lận thực phẩm” do mục đích kinh tế.",
+                    context: "TACCP là viết tắt của cụm từ Threat Assessment and Critical Control Points nghĩa là Đánh giá mối đe dọa và các điểm kiểm soát tới hạn. Cũng như VACCP, cụm từ viết tắt TACCP được thiết kế để thúc đẩy sự quen thuộc của ngành công nghiệp thực phẩm với HACCP. Tuy nhiên điểm kiểm soát tới hạn trong TACCP là các sự cố an toàn của cơ sở và nên hiểu là “các mối đe dọa giả mạo có ác ý (phòng vệ thực phẩm)”.",
                     badgeName: "TACCP",
                     cardName: "TACCP",
                     cardHref: "/fsms/taccp",
@@ -230,7 +230,7 @@ export default function Fsms() {
                     context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                     badgeName: "VHATTP",
                     cardName: "Văn hóa ATTP",
-                    cardHref: "/fsms/van-hoa-an-toan-thuc-pham",
+                    cardHref: "/fsms/vhattp",
                     imgSrc: "hinh-vhattp.svg",
                     imgAlt: "Văn hóa an toàn thực phẩm"
                 })}

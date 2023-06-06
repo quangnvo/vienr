@@ -5,9 +5,9 @@ export const blogFeatureImage = (blog: any) => {
         <Image
             src={blog.featureImage}
             alt={blog.title}
-            width={1000}
-            height={500}
-            className='rounded-xl shadow-sm'
+            width={500}
+            height={300}
+            className='rounded-xl'
         />
     )
 }

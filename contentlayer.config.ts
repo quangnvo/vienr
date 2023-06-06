@@ -56,11 +56,39 @@ export const QuanLyDiUng = defineDocumentTypeCreator({
     filePathPattern: "fsms/prps/quan-ly-di-ung/**/*.mdx"
 })
 
+// ---------- HACCP ----------
+export const Haccp = defineDocumentTypeCreator({
+    name: "Haccp",
+    filePathPattern: "fsms/haccp/**/*.mdx"
+})
+
+// ---------- TACCP ----------
+export const Taccp = defineDocumentTypeCreator({
+    name: "Taccp",
+    filePathPattern: "fsms/taccp/**/*.mdx"
+})
+
+// ---------- VACCP ----------
+export const Vaccp = defineDocumentTypeCreator({
+    name: "Vaccp",
+    filePathPattern: "fsms/vaccp/**/*.mdx"
+})
+
+// ---------- VHATTP ----------
+export const Vhattp = defineDocumentTypeCreator({
+    name: "Vhattp",
+    filePathPattern: "fsms/vhattp/**/*.mdx"
+})
+
 // ---------- Export source ----------
 export default makeSource({
     contentDirPath: './content',
     documentTypes: [
         Blog,
-        QuanLyDiUng
+        QuanLyDiUng,
+        Taccp,
+        Haccp,
+        Vaccp,
+        Vhattp
     ]
 })

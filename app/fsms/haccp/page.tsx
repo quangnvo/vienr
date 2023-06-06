@@ -1,25 +1,39 @@
-import { metadataGenerator } from "@/lib/metadata-generator"
+import { compareDesc } from 'date-fns'
+import BlogCard from '@/components/blog-card'
+import { breadcrums } from '@/components/breadcrums'
+import { allHaccps } from 'contentlayer/generated'
 
-export const metadata = metadataGenerator({
-  title: "HACCP",
-  description: "HACCP Vienr Food"
-})
 
 export default function Haccp() {
-  return (
-    <section id="haccp">
 
+  const blogs = allHaccps.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+
+  return (
+    <section id="haccp" className='py-20'>
       <div className="container">
-        {/* Div sau đây chỉ để margin bot, để footer không bị đẩy lên */}
-        <div className='my-60 flex justify-center items-center' style={{ height: "300px" }}>
-          <div className="border-2 border-black px-12 py-6 rounded-lg dark:border-slate-200">
-          <h1 className="text-center scroll-m-20 text-xl lg:text-4xl font-semibold tracking-tight">
-            Coming soon... 🖊️
-          </h1>
-          </div>
-        </div>
+
+        {/* Breadcrumbs */}
+        {breadcrums({
+          block1: {
+            hrefName: "/fsms",
+            blockName: "FSMS"
+          },
+          block2: {
+            hrefName: "/fsms/haccp",
+            blockName: "HACCP"
+          }
+        })}
+
+        {/* Title */}
+        <h1 className="scroll-m-20 text-4xl text-center md:text-left font-bold tracking-tight lg:text-5xl mt-7 mb-20">
+          HACCP
+        </h1>
+
+        {/* Render list of blogs */}
+        {blogs.map((item, index) => {
+          return <BlogCard key={index} {...item} />
+        })}
       </div>
-      
     </section>
   )
 }

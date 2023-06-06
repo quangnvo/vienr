@@ -52,7 +52,7 @@ export default function NavBar() {
     const navList = (
         <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-1">
             {renderNavbarButton({ name: "Trang chủ", path: "/" })}
-            {renderNavbarButton({ name: "Giới thiệu", path: "/about" })}
+            {/* {renderNavbarButton({ name: "Giới thiệu", path: "/about" })} */}
             {renderNavbarButton({ name: "Blogs", path: "/blogs" })}
             {renderNavbarButton({ name: "FSMS", path: "/fsms" })}
         </ul>
