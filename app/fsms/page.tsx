@@ -227,7 +227,7 @@ export default function Fsms() {
                 {/* VHATTP */}
                 {renderBigCard({
                     title: "Văn hóa an toàn thực phẩm",
-                    context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                    context: "Văn hóa an toàn thực phẩm trong cơ sở kinh doanh thực phẩm là cách mọi người (chủ sở hữu, người quản lý, nhân viên) suy nghĩ và hành động trong công việc hàng ngày của họ để đảm bảo thực phẩm họ chế biến hoặc phục vụ là an toàn. Đó là niềm tự hào về việc sản xuất thực phẩm an toàn mọi lúc, nhận ra rằng một sản phẩm chất lượng tốt phải an toàn để ăn. An toàn thực phẩm là ưu tiên hàng đầu của bạn.",
                     badgeName: "VHATTP",
                     cardName: "Văn hóa ATTP",
                     cardHref: "/fsms/vhattp",
