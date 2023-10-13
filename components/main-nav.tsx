@@ -55,6 +55,7 @@ export default function NavBar() {
             {/* {renderNavbarButton({ name: "Giới thiệu", path: "/about" })} */}
             {renderNavbarButton({ name: "Blogs", path: "/blogs" })}
             {renderNavbarButton({ name: "FSMS", path: "/fsms" })}
+            {/* {renderNavbarButton({ name: "Đăng nhập", path: "/login" })} */}
         </ul>
     );
 

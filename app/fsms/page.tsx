@@ -43,25 +43,14 @@ export default function Fsms() {
                     color="transparent"
                     className="m-0 rounded-none"
                 >
-                    {cardName == "Văn hóa ATTP"
-                        ? <div className="flex justify-center items-center py-20 px-3 bg-white dark:bg-slate-100">
-                            <Image
-                                src={`/images/fsms/${imgSrc}`}
-                                alt={`${imgAlt}`}
-                                width={250}
-                                height={100}
-                            />
-                        </div>
-                        : <div className="flex justify-center items-center py-7 px-3 bg-white dark:bg-slate-100">
-                            <Image
-                                src={`/images/fsms/${imgSrc}`}
-                                alt={`${imgAlt}`}
-                                width={250}
-                                height={100}
-                            />
-                        </div>
-                    }
-
+                    <div className="flex justify-center items-center py-7 px-3 bg-white dark:bg-slate-100">
+                        <Image
+                            src={`/images/fsms/${imgSrc}`}
+                            alt={`${imgAlt}`}
+                            width={250}
+                            height={100}
+                        />
+                    </div>
                 </CardHeader>
 
                 <CardBody className="p-5 dark:bg-slate-100">

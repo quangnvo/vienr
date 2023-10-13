@@ -51,7 +51,7 @@ export default function Home() {
 							{/* Text */}
 							<div className="text-base md:text-lg mt-5 animate__animated animate__fadeInLeft md:w-11/12" style={{ lineHeight: '35px' }}>
 								<p className='my-4'>
-									Chào mừng các bạn đến với website <b>vienrfood.com</b>!
+									Chào mừng các bạn đến với website <b>Vienr Food</b>!
 								</p>
 								<p className='my-4 text-justify'>
 									Nơi chúng tôi chia sẻ kiến thức và giải pháp để thiết lập, duy trì một hệ thống an toàn thực phẩm cho các doanh nghiệp kinh doanh sản xuất thực phẩm.
