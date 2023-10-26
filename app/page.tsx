@@ -44,12 +44,13 @@ export default function Home() {
 						<div className="w-full text-center xl:text-left">
 
 							{/* Title */}
-							<h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl animate__animated animate__fadeInLeft">
+							{/* <h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl animate__animated animate__fadeInLeft"> */}
+							<h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl">
 								Vienr Food
 							</h1>
 
 							{/* Text */}
-							<div className="text-base md:text-lg mt-5 animate__animated animate__fadeInLeft md:w-11/12" style={{ lineHeight: '35px' }}>
+							<div className="text-base md:text-lg mt-5 md:w-11/12" style={{ lineHeight: '35px' }}>
 								<p className='my-4'>
 									Chào mừng các bạn đến với website <b>Vienr Food</b>!
 								</p>
@@ -71,7 +72,7 @@ export default function Home() {
 
 							{/* Button Blog */}
 							<Link href="/fsms">
-								<Button variant="vienr" className='mt-5 text-base md:text-md animate__animated animate__fadeInLeft shadow-lg font-semibold px-10 py-6 rounded-full'>
+								<Button variant="vienr" className='mt-5 text-base md:text-md shadow-lg font-semibold px-10 py-6 rounded-full'>
 									FSMS
 								</Button>
 							</Link>
