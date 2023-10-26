@@ -44,13 +44,12 @@ export default function Home() {
 						<div className="w-full text-center xl:text-left">
 
 							{/* Title */}
-							{/* <h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl animate__animated animate__fadeInLeft"> */}
 							<h1 className="scroll-m-20 text-4xl font-bold tracking-tight md:text-6xl">
 								Vienr Food
 							</h1>
 
 							{/* Text */}
-							<div className="text-base md:text-lg mt-5 md:w-11/12" style={{ lineHeight: '35px' }}>
+							<div className="text-base md:text-lg mt-5 lg:w-11/12" style={{ lineHeight: '35px' }}>
 								<p className='my-4'>
 									Chào mừng các bạn đến với website <b>Vienr Food</b>!
 								</p>
@@ -60,14 +59,6 @@ export default function Home() {
 								<p className='my-4 text-justify'>
 									Tại đây, bạn sẽ tìm thấy các hướng dẫn để văn bản hóa các chương trình tiên quyết, đánh giá rủi ro, phân tích mối nguy và xu hướng văn hóa an toàn thực phẩm thông qua những bài viết chuyên sâu và thực tế, cũng như cập nhật thông tin mới nhất về các yêu cầu vận hành hệ thống an toàn thực phẩm phù hợp với một số tiêu chuẩn toàn cầu.
 								</p>
-								{/* <ul className="my-4 ml-6 list-disc [&>li]:mt-2">
-									<li className='ml-0 xl:ml-7'>Cục quản lý thực phẩm và dược phẩm Hoa Kỳ (<b>FDA</b>)</li>
-									<li className='ml-0 xl:ml-7'>Tổ chức sáng kiến an toàn thực phẩm toàn cầu (<b>GFSI</b>)</li>
-									<li className='ml-0 xl:ml-7'>Hiệp hội bán lẻ toàn cầu Anh Quốc (<b>BRC</b>)</li>
-								</ul> */}
-								{/* <p className='my-4 text-justify'>
-									Bất kể bạn là một chủ nhà hàng thực phẩm, nhà sản xuất, nhân viên quản lý hay chỉ đơn giản là người quan tâm đến an toàn thực phẩm, chúng tôi hy vọng rằng website của chúng tôi sẽ trở thành nguồn tài nguyên hữu ích và đáng tin cậy cho bạn. Cảm ơn bạn đã ghé thăm!
-								</p> */}
 							</div>
 
 							{/* Button Blog */}

@@ -95,7 +95,7 @@ export default function NavBar() {
                         </div>
 
                         {/* Dark mode */}
-                        <ModeToggle />
+                        {/* <ModeToggle /> */}
 
                         {/* Icon Hamburger */}
                         <button

@@ -35,7 +35,7 @@ export default function Fsms() {
 
     // ---------- Render Small Card ----------
     const renderSmallCard = ({ cardName, cardHref, imgSrc, imgAlt }: SmallCardPropsType) => {
-        return <div className="col-span-4 flex justify-center items-center order-2 md:order-1">
+        return <div className="col-span-4 flex justify-center items-center order-2 xl:order-1">
             <Card className="w-80 overflow-hidden shadow-md border border-black dark:border-white">
                 <CardHeader
                     floated={false}
@@ -63,7 +63,7 @@ export default function Fsms() {
                     {/* Button Tìm hiểu thêm */}
                     <div className="mt-4 text-center md:text-left">
                         <Link href={cardHref}>
-                            <Button variant="vienr" className="shadow-md font-semibold">
+                            <Button className="shadow-md font-medium">
                                 Tìm hiểu thêm
                             </Button>
                         </Link>
@@ -75,8 +75,8 @@ export default function Fsms() {
 
     // ---------- Render Big Card ----------
     const renderBigCard = ({ title, context, badgeName, cardName, cardHref, contextAdditional, imgAlt, imgSrc }: BigCardPropsType) => {
-        return <div className="w-full py-8 rounded-xl mt-10 px-5 md:px-0 bg-slate-100 dark:bg-gray-900">
-            <div className="grid grid-cols-1 md:grid-cols-12">
+        return <div className="w-full py-8 rounded-xl mt-10 px-5 md:px-0 dark:bg-gray-900">
+            <div className="grid grid-cols-1 xl:grid-cols-12">
 
                 {/* Card */}
                 {renderSmallCard({
@@ -88,10 +88,10 @@ export default function Fsms() {
                 })}
 
                 {/* Nội dung bài */}
-                <div className="col-span-8 flex justify-center items-center px-0 md:pr-12 order-1 md:order-2">
+                <div className="col-span-8 flex justify-center items-center px-0 md:pr-12 order-1 xl:order-2">
                     <div className="px-3 md:px-0">
 
-                        <h2 className="text-center md:text-left scroll-m-20 text-2xl md:text-3xl font-semibold tracking-tight transition-colors">
+                        <h2 className="text-center xl:text-left scroll-m-20 text-2xl md:text-3xl font-semibold tracking-tight transition-colors">
                             {title}
                         </h2>
 
@@ -121,10 +121,10 @@ export default function Fsms() {
 
                 {/* Giới thiệu*/}
                 <div className="w-full">
-                    <div className="grid grid-cols-1 md:grid-cols-12">
+                    <div className="grid grid-cols-1 xl:grid-cols-12">
 
                         {/* Image */}
-                        <div className="col-span-4 flex md:justify-start justify-center order-2 md:order-1 md:py-0 py-10">
+                        <div className="col-span-4 flex md:justify-start justify-center order-2 xl:order-1 md:py-0 py-10">
                             {isDark
                                 ? <Image
                                     src={fsmsDarkMode}
@@ -140,11 +140,11 @@ export default function Fsms() {
                         </div>
 
                         {/* Đôi dòng về FSMS */}
-                        <div className="col-span-8 flex justify-center items-center order-1 md:order-2">
+                        <div className="col-span-8 flex justify-center items-center order-1 xl:order-2">
                             <div className="md:pl-14">
 
                                 {/* Title */}
-                                <h1 className="text-center md:text-left scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
+                                <h1 className="text-center mt-0 md:mt-20 xl:mt-0 xl:text-left scroll-m-20 text-3xl lg:text-4xl font-bold tracking-tight">
                                     Đôi dòng về FSMS
                                 </h1>
 
