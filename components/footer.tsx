@@ -79,7 +79,7 @@ export default function Footer() {
 						</div>
 
 						<div className="flex justify-center items-center ">
-							<p>© Vienr 2023. All Rights Reserved.</p>
+							<p>© Vienr 2024. All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>
