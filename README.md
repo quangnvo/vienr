@@ -5,9 +5,7 @@ width="200" height="200">
 
 ## About
 
-**Vienr Food** 
-
-
+**Vienr Food**
 
 🚀 Live demo: [https://vienr-food.vercel.app/](https://vienr-food.vercel.app/)
 
@@ -18,4 +16,11 @@ width="200" height="200">
 
 ## Screenshots
 
+🏠 Homepage
 ![vienrfood-homepage](/documentation_images/vienr-food-homepage.png)
+
+📃 Blog page
+![vienrfood-homepage](/documentation_images/vienr-food-blogpage.png)
+
+📃 FSMS page
+![vienrfood-homepage](/documentation_images/vienr-food-fsmspage.png)
