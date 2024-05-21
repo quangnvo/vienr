@@ -14,6 +14,13 @@ export const metadata = {
 		template: "%s | Vienr Food"
 	},
 	description: 'Food Safety Management Blog, writing about FSMS, focusing on HACCP',
+
+	// This is the favicon of the website
+	// The /favicon.ico is the public path of the favicon
+	// So the favicon is located at "public/favicon.ico"
+	icons: {
+		icon: '/favicon.ico',
+	},
 }
 
 export default function RootLayout({
